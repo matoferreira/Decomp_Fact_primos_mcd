@@ -22,10 +22,9 @@ namespace Program
             int resultado;
 
 
-            //Aplicando algoritmo de Euclides
             do
             {
-                 //Para hacer el algoritmo de euclides tomamos al numero menor y lo guardamos en el resultado
+                 //Tomamos al numero menor y lo guardamos en el resultado
                  //seguidamente, hacemos a/b, si el resto = 0, es el MCD y se termina el bucle while
                  //si el resto es distinto de 0, ese resto lo guardamos en a
                  //ahora dividimos el dividendo anterior (b) por este resto y verificamos si el nuevo resto es = 0 o si continuamos el bucle
