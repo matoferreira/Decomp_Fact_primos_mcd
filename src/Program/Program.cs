@@ -22,9 +22,14 @@ namespace Program
             int resultado;
 
 
-            //Aplicando teorema de euclides
+            //Aplicando algoritmo de Euclides
             do
             {
+                 //Para hacer el algoritmo de euclides tomamos al numero menor y lo guardamos en el resultado
+                 //seguidamente, hacemos a/b, si el resto = 0, es el MCD y se termina el bucle while
+                 //si el resto es distinto de 0, ese resto lo guardamos en a
+                 //ahora dividimos el dividendo anterior (b) por este resto y verificamos si el nuevo resto es = 0 o si continuamos el bucle
+                 //hasta encontrar el MCD
                 resultado = b;
                 b = a%b;
                 a = resultado;  
@@ -32,7 +37,10 @@ namespace Program
 
             //Mostramos como resultado el último resto no nulo
             Console.WriteLine($"El mcd entre {num1} y {num2} es: {resultado}");
-            Console.ReadKey(true);
+
+            //Nos falta imprimir en pantalla la descomposición factorial en numeros primos
+
+            
         }
     }
 }
