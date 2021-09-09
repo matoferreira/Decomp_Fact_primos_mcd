@@ -38,9 +38,46 @@ namespace Program
             //Mostramos como resultado el último resto no nulo
             Console.WriteLine($"El mcd entre {num1} y {num2} es: {resultado}");
 
-            //Nos falta imprimir en pantalla la descomposición factorial en numeros primos
 
-            
+            //Empieza descomp. factorial en números primos
+            //Nos falta imprimir en pantalla la descomposición factorial en numeros primos
+            //Declaro una variable x = 2, primer numero primo
+            int x = 2;
+
+            Console.WriteLine($"La descomposición en números primos de {num1} es: ");
+            while (num1 != 1) //Mi condición es que el número no puede ser 1, ya que no se lo puede descomponer
+            {
+                if (num1 % x == 0) //si el resto de la división entre el num1 y x 
+                {
+                    Console.Write(x + " x ");
+                    num1 = num1 / x;
+                }
+                else
+                {
+                    x = x+1;
+                }
+            }
+            Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
+            Console.Write("\b \b");
+
+            int y = 2;
+            Console.WriteLine("\n");
+            Console.WriteLine($"La descomposición en números primos de {num2} es: ");
+            while (num2 != 1)
+            {
+                if (num2 % y == 0)
+                {
+                    Console.Write(y + " x ");
+                    num2 = num2 / y;
+                }
+                else
+                {
+                    y = y+1;
+                }
+            }
+            Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
+            Console.Write("\b \b");
+
         }
     }
 }
