@@ -47,7 +47,7 @@ namespace Program
             Console.WriteLine($"La descomposición en números primos de {num1} es: ");
             while (num1 != 1) //Mi condición es que el número no puede ser 1, ya que no se lo puede descomponer
             {
-                if (num1 % x == 0) //si el resto de la división entre el num1 y x 
+                if (num1 % x == 0) //si el resto de la división entre el num1 y x es 0, agrego ese divisor a la lista, si no, sumo 1 a x y vuelvo a iterar
                 {
                     Console.Write(x + " x ");
                     num1 = num1 / x;
